@@ -1,0 +1,14 @@
+.introIcon {
+	color: #067aed;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.hidable {
+	max-width: calc(90vw);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
