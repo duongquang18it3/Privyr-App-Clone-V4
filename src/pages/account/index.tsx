@@ -44,7 +44,7 @@ const AccountPage = (): JSX.Element => {
                   Name
                 </p>
                 <p className="">Email</p>
-                <p className="">Demo Company</p>
+                <p className="">Company</p>
               </div>
               <div className="column has-text-right">
                 <span className="icon">
