@@ -5,7 +5,7 @@ import { ImArrowDownRight2 } from "react-icons/im";
 
 import * as styles from "./listGroup.module.scss";
 
-const dummyList: any[] = [{}, {}, {}, {}];
+const dummyList: any[] = [{}, {}];
 const emptyDummyList: any[] = [];
 
 export const ListGroup = (): JSX.Element => {
