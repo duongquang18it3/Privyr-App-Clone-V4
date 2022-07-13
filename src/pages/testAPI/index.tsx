@@ -23,6 +23,7 @@ const TestAPIPage = (): JSX.Element => {
   const callAPI = useCallback(async () => {
     let url = "/";
     let body = {};
+    let method = "post";
 
     if (modelRef && modelRef.current && modelRef.current.value !== "") {
       if (selected === "get") {
@@ -39,7 +40,9 @@ const TestAPIPage = (): JSX.Element => {
             url = "/post";
             body = {
               model: modelRef.current.value.trim(),
-              name: nameRef.current.value.trim(),
+              data: {
+                name: nameRef.current.value.trim(),
+              },
             };
           } else {
             setResult("Please provide name");
@@ -68,11 +71,15 @@ const TestAPIPage = (): JSX.Element => {
           body = {
             model: modelRef.current.value.trim(),
             id: idRef.current.value.trim(),
-            name: nameRef.current.value.trim(),
+            data: {
+              name: nameRef.current.value.trim(),
+            },
           };
+          method = "put";
         } else if (selected === "delete") {
           if (idRef && idRef.current && idRef.current.value !== "") {
             url = "/delete";
+            method = "delete";
             body = {
               model: modelRef.current.value.trim(),
               id: idRef.current.value.trim(),
@@ -87,7 +94,7 @@ const TestAPIPage = (): JSX.Element => {
       const data = await apiService({
         url: url,
         body: JSON.stringify(body),
-        method: "POST",
+        method: method,
       });
       setResult(JSON.stringify(data));
       return;
