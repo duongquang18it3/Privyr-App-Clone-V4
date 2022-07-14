@@ -34,9 +34,13 @@ export const apiService = async (props: ApiPropsType) => {
     );
 
     if (apiResponse.status === 200) {
-      console.log(apiResponse);
-      const json = await apiResponse.json();
-      return json;
+      if (props.method === "post" && props.url !== "/post") {
+        const json = await apiResponse.json();
+        return json;
+      } else {
+        const json = await apiResponse.text();
+        return json;
+      }
     } else {
       return apiResponse;
     }
