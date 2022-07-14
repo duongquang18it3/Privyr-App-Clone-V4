@@ -22,7 +22,7 @@ const AccountPage = (): JSX.Element => {
               "column is-full has-background-white has-text-black my-1"
             )}
             onClick={() => {
-              navigate("/account/");
+              navigate("/account/profile");
             }}
           >
             <div className="columns is-vcentered is-mobile">

@@ -45,7 +45,6 @@ export const apiService = async (props: ApiPropsType) => {
       return apiResponse;
     }
   } catch (error) {
-    console.log("hihihihi", error);
     return {
       error: "",
       content: `${error}`,

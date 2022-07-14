@@ -1,0 +1,36 @@
+.box {
+    min-height: 3em;
+    border-radius: 4px;
+    background-color: #fff;
+    position: relative;
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-color: transparent;
+      border-style: solid;
+    }
+  
+    &::before {
+      border-width: 2.125em;
+      border-right-color: transparent;
+      border-top-color: transparent;
+    }
+  
+    &::after {
+      border-width: 2em;
+      border-right-color: #0c0;
+      border-top-color: #0c0;
+    }
+  }
+  
+  .leadTag {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(45deg) translateX(0.275rem) translateY(0.5rem);
+  }

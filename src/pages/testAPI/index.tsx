@@ -107,10 +107,14 @@ const TestAPIPage = (): JSX.Element => {
   return (
     <>
       <main>
-        <Layout appBarTitle="Test API" hasBottomTabBar bottomTabBarIndex={2}>
+        <Layout
+          appBarTitle="Test API XML-RPC"
+          hasBottomTabBar
+          bottomTabBarIndex={2}
+        >
           <div className="box m-3">
             <div className="column">
-              <p>Test API page</p>
+              <p></p>
             </div>
 
             <div className="column">
