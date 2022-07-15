@@ -13,7 +13,7 @@ export const SimpleTimeline = (): JSX.Element => {
     <>
       <div className="timeline">
         <header className="timeline-header">
-          <span className="tag is-medium is-info">Add</span>
+          <span className="tag is-info">Add activity</span>
         </header>
         {/* <header className="timeline-header">
 					<span className="tag is-medium is-primary">Start</span>

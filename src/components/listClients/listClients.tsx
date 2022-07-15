@@ -38,9 +38,8 @@ export const ListClients = (): JSX.Element => {
     <>
       {/* <ClientCard name={"Test 1"} isLead />
       <ClientCard name={"Test 2"} /> */}
-      <ContentCard />
 
-      {emptyDummyList && emptyDummyList.length === 0 && (
+      {/* {emptyDummyList && emptyDummyList.length === 0 && (
         <div className="column is-6 is-offset-3 has-text-centered">
           <div className="block mb-1">
             <MdOutlineGroups className={styles.introIcon} size={50} />
@@ -52,7 +51,7 @@ export const ListClients = (): JSX.Element => {
             </p>
           </div>
         </div>
-      )}
+      )} */}
 
       {data &&
         data.length > 0 &&
@@ -63,6 +62,7 @@ export const ListClients = (): JSX.Element => {
               navigate(`/clients/clientDetail/${index}`);
             }}
           >
+            <ContentCard />
             <ClientCard name={item.name} />
             {/* <div className="columns is-mobile m-0">
               <div className="column is-3">

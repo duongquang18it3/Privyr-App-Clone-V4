@@ -52,8 +52,8 @@ export const ClientCard = ({
             <p className="" style={{ fontWeight: "bold" }}>
               {name}
             </p>
-            <p className="">{company ?? "Text company"}</p>
-            <p className="">{group ?? "Tex group"}</p>
+            <p className="">{company ?? "Company"}</p>
+            <p className="">{group ?? "Group name"}</p>
           </div>
         </div>
 

@@ -47,8 +47,8 @@ const ClientDetailPage = (): JSX.Element => {
             </div>
           </div>
           <div className="column has-background-white my-2">
-            <p>FOLLOW UP</p>
-            <p>No follow up scheduled</p>
+            <p>Group</p>
+            <p>Groups name</p>
           </div>
           <div className="column has-background-white my-2">
             <p>NOTES</p>
