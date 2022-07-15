@@ -6,7 +6,15 @@
 
   button {
     border-radius: 100%;
-    width: 60px;
-    height: 60px;
+    transition: all 0.2s ease-in;
+    color: #067aed;
+    svg {
+      opacity: 1;
+    }
   }
+}
+
+.isHidden {
+  opacity: 0 !important;
+  transform: translateY(2rem);
 }

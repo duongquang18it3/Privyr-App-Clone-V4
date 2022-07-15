@@ -13,6 +13,7 @@ import { initAppState } from "./InitAppState";
 export type AppState = {
 	authentication: authentication;
 	isActiveBurger: boolean;
+	isActiveFloatPopUp: boolean;
 	activeTab?: string;
 };
 
@@ -20,6 +21,7 @@ export type AppStateInitParams =
 	| {
 			authentication: authentication;
 			isActiveBurger: boolean;
+			isActiveFloatPopUp: boolean;
 			activeTab?: string;
 	  }
 	| undefined;

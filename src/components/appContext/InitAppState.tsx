@@ -6,11 +6,13 @@ export function initAppState(initParams?: AppStateInitParams): AppState {
 		client_secret: "",
 	};
 	const isActiveBurger = initParams?.isActiveBurger ?? false;
+	const isActiveFloatPopUp = initParams?.isActiveBurger ?? false;
 	const activeTab = initParams?.activeTab ?? undefined;
 
 	return {
 		authentication,
 		isActiveBurger,
+		isActiveFloatPopUp,
 		activeTab,
 	};
 }

@@ -16,7 +16,7 @@ export type ApiResponseType = {
 export const apiService = async (props: ApiPropsType) => {
   try {
     const apiResponse = await fetch(
-      `http://172.104.164.227:1234/api${props.url}`,
+      `https://api.epiklah-demo.helpbots.sg:1234/api${props.url}`,
       {
         method: props.method ?? "get", // *GET, POST, PUT, DELETE, etc.
         // mode: "no-cors", // no-cors, *cors, same-origin
@@ -27,7 +27,7 @@ export const apiService = async (props: ApiPropsType) => {
         headers: {
           "Content-type": "charset=UTF-8",
           // Authorization: "Bearer s6G8iq3ioWGpea6BwATp84l1EnBeKYlq",
-          Accept: "application/json",
+          // Accept: "application/json",
         },
         body: props.body,
       }

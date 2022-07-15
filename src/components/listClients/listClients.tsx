@@ -36,8 +36,8 @@ export const ListClients = (): JSX.Element => {
 
   return (
     <>
-      <ClientCard name={"test 1"} isLead />
-      <ClientCard name={"test 2"} />
+      <ClientCard name={"Test 1"} isLead />
+      <ClientCard name={"Test 2"} />
       <ContentCard />
 
       {emptyDummyList && emptyDummyList.length === 0 && (
